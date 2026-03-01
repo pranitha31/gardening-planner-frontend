@@ -6,14 +6,18 @@ const SeasonalPlantForm = ({ fetchPlants, editingPlant, setEditingPlant }) => {
     plant_name: "",
     plant_type: "",
     season: "",
-    care_tips: ""
+    care_tips: []
   });
 
   useEffect(() => {
-    if (editingPlant) {
-      setFormData(editingPlant);
-    }
-  }, [editingPlant]);
+  if (editingPlant) {
+    setFormData({
+      ...editingPlant,
+      care_tips: editingPlant.care_tips || []
+    });
+  }
+}, [editingPlant]);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -114,7 +118,6 @@ const SeasonalPlantForm = ({ fetchPlants, editingPlant, setEditingPlant }) => {
           "Fertilize monthly",
           "Avoid overwatering",
           "Prune regularly",
-          "Protect from pests"
         ].map((tip) => (
           <div key={tip}>
             <input

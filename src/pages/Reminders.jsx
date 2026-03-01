@@ -226,8 +226,6 @@ const Reminder = () => {
       </div>
 
     </div>
-
-
   );
 };
 

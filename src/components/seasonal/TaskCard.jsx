@@ -13,13 +13,13 @@ const TaskCard = ({ task, deleteTask, setEditingTask }) => {
   };
 
   return (
-    <div className="bg-white p-5 rounded-2xl shadow-lg hover:shadow-xl transition">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm border border-gray-100">
         
       {/* Plant image */}
       <img
         src={task.seasonal_planner?.image_url}
         alt="plant"
-        className="w-full h-40 object-cover rounded-xl"
+        className="w-full h-48 object-cover"
       />
 
       {/* Plant name */}

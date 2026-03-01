@@ -61,13 +61,14 @@ export default function Register() {
             });
 
             // ✅ Show success message
-            alert("Registration successful! Please login.");
+            //alert("Registration successful! Please login.");
 
             // ✅ Redirect to login page
             navigate("/login");
 
         } catch (error) {
-            alert(error.response?.data?.error || "Registration failed");
+            console.error(error);
+            //alert(error.response?.data?.error || "Registration failed");
         }
     };
 

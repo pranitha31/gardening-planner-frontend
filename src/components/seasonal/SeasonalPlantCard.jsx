@@ -1,12 +1,12 @@
 const SeasonalPlantCard = ({ plant, deletePlant, setEditingPlant }) => {
   return (
-    <div className="bg-white p-5 rounded-xl shadow-lg">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm border border-gray-100">
 
       {plant.image_url && (
         <img
           src={plant.image_url}
           alt={plant.plant_name}
-          className="w-full h-40 object-cover rounded mb-3"
+          className="w-full h-48 object-cover"
         />
       )}
 

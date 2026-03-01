@@ -8,17 +8,20 @@ const MainLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    // <div className="flex min-h-screen bg-gray-100">
+    // Change min-h-screen to h-full or ensure the container allows growth
+    <div className="flex min-h-screen bg-gray-100 items-stretch">
 
       {/* SIDEBAR */}
       <div
-        className={`fixed z-40 inset-y-0 left-0 transform s
+        className={`fixed z-50 inset-y-0 left-0 transform 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} 
         transition duration-300 ease-in-out 
-        lg:translate-x-0 lg:static lg:inset-0`}
+        lg:translate-x-0 lg:static lg:block`}
       >
         <Sidebar closeSidebar={() => setIsOpen(false)} />
       </div>
+
 
       {/* OVERLAY (Mobile Only) */}
       {isOpen && (
@@ -29,7 +32,7 @@ const MainLayout = () => {
       )}
 
       {/* MAIN CONTENT */}
-      <div className="flex-1 flex flex-col w-full">
+      <div className="flex-1 flex flex-col min-w-0">
 
         {/* TOPBAR */}
         <div className="flex items-center bg-white shadow px-4 py-3">
@@ -46,7 +49,7 @@ const MainLayout = () => {
         </div>
 
         {/* PAGE CONTENT */}
-        <main className="flex-1 p-4 sm:p-6">
+        <main className="flex-1 p-4 sm:p-6 overflow-x-hidden">
           <Outlet />
         </main>
 

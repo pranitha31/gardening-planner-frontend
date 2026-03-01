@@ -27,7 +27,8 @@ export default function Login() {
       navigate("/dashboard");
 
     } catch (error) {
-      alert(error.response?.data?.error || "Login failed");
+      console.error(error);
+      // alert(error.response?.data?.error || "Login failed");
     }
   };
 

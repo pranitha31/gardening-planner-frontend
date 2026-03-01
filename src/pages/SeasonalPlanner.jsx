@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import API from "../services/api";
-
-
 import SeasonalPlantForm from "../components/seasonal/SeasonalPlantForm";
 import SeasonalPlantCard from "../components/seasonal/SeasonalPlantCard";
 
@@ -31,8 +29,6 @@ const SeasonalPlanner = () => {
     };
 
     return (
-
-
         <div className="space-y-6">
             <h2 className="text-2xl font-bold mb-4">
                 Seasonal Planner 🌱
@@ -55,8 +51,6 @@ const SeasonalPlanner = () => {
                 ))}
             </div>
         </div>
-
-
     );
 };
 

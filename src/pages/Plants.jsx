@@ -64,7 +64,7 @@ const Plants = () => {
       // Reset form
       setFormData({
         plant_name: "",
-        species: "",
+        plant_type:"",
         sunlight: "",
         watering_interval_days: "",
       });
@@ -75,7 +75,7 @@ const Plants = () => {
 
     } catch (error) {
       console.error(error);
-      alert("Something went wrong");
+      //alert("Something went wrong");
     }
   };
 
@@ -103,7 +103,7 @@ const Plants = () => {
   };
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-6">
 
       {/* FORM */}
       <div className="bg-white p-6 rounded-2xl shadow-md mb-6">
@@ -225,8 +225,6 @@ const Plants = () => {
       </div>
 
     </div>
-
-
   );
 };
 

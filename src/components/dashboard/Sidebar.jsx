@@ -17,8 +17,8 @@ const Sidebar = ({ closeSidebar }) => {
   const inactiveClass = "hover:bg-green-600 text-white";
 
   return (
-    <div className="w-64 bg-green-700 text-white min-h-screen p-5 shadow-lg flex flex-col justify-between">
-
+    // <div className="w-64 flex-shrink-0 bg-green-700 text-white h-screen p-5 shadow-lg flex flex-col justify-between">
+    <div className="w-64 flex-shrink-0 bg-green-700 text-white min-h-screen p-5 shadow-lg flex flex-col justify-between sticky top-0">
       {/* Logo */}
       <div>
         <h2 className="text-2xl font-bold mb-8">🌿 Smart Garden</h2>

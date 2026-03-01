@@ -8,7 +8,6 @@ const Dashboard = () => {
     plants: 0,
     reminders_pending: 0,
     reminders_completed: 0,
-    overdue_reminders: 0,
     seasonal_planner: 0,
     seasonal_tasks: 0,
     upcoming_reminders: []
@@ -98,15 +97,6 @@ const Dashboard = () => {
       </div>
 
     </div>
-
-    {/* OVERDUE ALERT */}
-    {stats.overdue_reminders > 0 && (
-      <div className="bg-red-100 border-l-4 border-red-500 p-4 rounded-xl shadow">
-        <p className="text-red-700 font-semibold">
-          ⚠ You have {stats.overdue_reminders} overdue reminders!
-        </p>
-      </div>
-    )}
 
     {/* MAIN GRID SECTION */}
     <div className="grid lg:grid-cols-2 gap-6">

@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://gardening-planner-backend.onrender.com/api"
+  baseURL: "https://gardening-planner-backend.onrender.com/api",
+  timeout: 60000,
+  withCredentials: true
 });
 
 // 🔐 Attach token automatically

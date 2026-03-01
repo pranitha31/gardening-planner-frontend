@@ -6,8 +6,6 @@ import API from "../services/api";
 const WeatherPlanner = () => {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
-
-
   const [loading, setLoading] = useState(false);
 
   const fetchWeather = async () => {
@@ -17,6 +15,7 @@ const WeatherPlanner = () => {
       setWeather(res.data);
     } catch (err) {
       setError("Weather fetch failed");
+      console.error(err);
     } finally {
       setLoading(false);
     }
@@ -63,12 +62,6 @@ const WeatherPlanner = () => {
             </div>
 
           )}
-          {/* <button
-                onClick={fetchWeather}
-                className="bg-green-600 text-white px-4 py-2 rounded-lg"
-              >
-                Refresh Weather
-              </button> */}
           <button
             onClick={fetchWeather}
             disabled={loading}
@@ -82,8 +75,6 @@ const WeatherPlanner = () => {
         !error && <p>Loading weather...</p>
       )}
     </main>
-
-
   );
 };
 

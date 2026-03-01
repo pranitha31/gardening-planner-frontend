@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 
 export default function Navbar() {
+  const location = useLocation();
+
+  // Define which paths should hide the auth buttons
+  const isAuthPage = location.pathname === "/login" || location.pathname === "/register";
+
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-white shadow-md">
 
@@ -9,17 +14,20 @@ export default function Navbar() {
         🌿 Garden Planner
       </Link>
 
-      <div className="space-x-4">
-        <Link to="/login">
-          <Button variant="outline">Login</Button>
-        </Link>
+      {/* Only show these buttons if we are NOT on the login or register page */}
+      {!isAuthPage && (
+        <div className="space-x-4">
+          <Link to="/login">
+            <Button variant="outline">Login</Button>
+          </Link>
 
-        <Link to="/register">
-          <Button className="bg-green-600 hover:bg-green-700">
-            Get Started
-          </Button>
-        </Link>
-      </div>
+          <Link to="/register">
+            <Button className="bg-green-600 hover:bg-green-700">
+              Get Started
+            </Button>
+          </Link>
+        </div>
+      )}
     </nav>
   )
 }

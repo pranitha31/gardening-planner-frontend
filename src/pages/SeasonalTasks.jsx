@@ -25,7 +25,6 @@ const SeasonalTasks = () => {
   };
 
   return (
-
     <div className="space-y-6">
       <h1 className="text-2xl font-bold text-green-700 mb-6">
         Seasonal Tasks 📋
@@ -67,7 +66,6 @@ const SeasonalTasks = () => {
 
       </div>
 
-
       <TaskForm
         fetchTasks={fetchTasks}
         editingTask={editingTask}
@@ -89,8 +87,6 @@ const SeasonalTasks = () => {
           ))}
       </div>
     </div>
-
-
   );
 };
 

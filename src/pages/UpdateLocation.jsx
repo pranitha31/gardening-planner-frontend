@@ -5,17 +5,12 @@ import { useState } from "react";
 import API from "../services/api";
 
 const UpdateLocation = () => {
-  //const navigate = useNavigate();
-
+ 
   const [country, setCountry] = useState("");
   const [state, setState] = useState("");
   const [city, setCity] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-
-
-
-  // ✅ Proper handleSave outside useEffect
   const handleSave = async () => {
     setError("");
     setMessage("");
@@ -42,12 +37,11 @@ const UpdateLocation = () => {
 
     } catch (err) {
       setError("Error updating location");
+      console.error(err);
     }
   };
 
   return (
-
-
     <main className="p-6">
       <h2 className="text-2xl font-bold text-green-700 mb-6">
         Update Location 📍
