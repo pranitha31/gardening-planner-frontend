@@ -17,7 +17,6 @@ This project demonstrates modern frontend development practices using component-
 - 📅 Reminder Scheduling Interface
 - 🌤️ Seasonal Planner View
 - ⛅ Real-time Weather Display
-- 🔄 Weather Refresh Functionality
 - 🔒 Protected Routes (Authentication-based Access)
 - 📱 Fully Responsive UI
 
@@ -33,7 +32,7 @@ This project demonstrates modern frontend development practices using component-
 | Icons | Lucide React |
 | API Handling | Fetch / Axios |
 | State Management | React Hooks |
-| Deployment | Vercel |
+| Deployment | Netlify |
 
 ---
 
