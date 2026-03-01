@@ -93,7 +93,6 @@ frontend/
 
 - Fetches real-time weather data from backend
 - Displays temperature, conditions, and forecast
-- Includes manual "Refresh Weather" functionality
 - Handles loading and error states
 
 ---
