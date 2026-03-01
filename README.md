@@ -146,7 +146,7 @@ http://localhost:5173
 Frontend Deployment Link:
 
 ```
-https://your-frontend-deployment-link.vercel.app
+https://your-frontend-deployment-link.netlify.app
 ```
 
 ---
