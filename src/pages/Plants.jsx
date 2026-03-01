@@ -58,7 +58,7 @@ const Plants = () => {
       } else {
         // CREATE
         await API.post("/plants", data);
-        alert("Plant added successfully 🌱");
+        //alert("Plant added successfully 🌱");
       }
 
       // Reset form
