@@ -1,8 +1,8 @@
-# 🌿 Weather Planner Frontend
+# 🌿 Gardening  Planner Frontend
 
 ## 📖 Overview
 
-The Weather Planner Frontend is a responsive web application built to help users manage plants, schedule reminders, and plan seasonal activities with real-time weather insights.
+The Gardening  Planner Frontend is a responsive web application built to help users manage plants, schedule reminders, and plan seasonal activities with real-time weather insights.
 
 It connects seamlessly with the Weather Planner Backend API and provides a secure, user-friendly interface with protected routes and dynamic weather updates.
 
