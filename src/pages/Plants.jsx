@@ -54,7 +54,7 @@ const Plants = () => {
       if (editingId) {
         // UPDATE
         await API.put(`/plants/${editingId}`, data);
-        alert("Plant updated successfully 🌿");
+        //alert("Plant updated successfully 🌿");
       } else {
         // CREATE
         await API.post("/plants", data);
