@@ -1,8 +1,8 @@
-# 🌿 Weather Planner Frontend
+# 🌿 Gardening  Planner Frontend
 
 ## 📖 Overview
 
-The Weather Planner Frontend is a responsive web application built to help users manage plants, schedule reminders, and plan seasonal activities with real-time weather insights.
+The Gardening  Planner Frontend is a responsive web application built to help users manage plants, schedule reminders, and plan seasonal activities with real-time weather insights.
 
 It connects seamlessly with the Weather Planner Backend API and provides a secure, user-friendly interface with protected routes and dynamic weather updates.
 
@@ -17,7 +17,6 @@ This project demonstrates modern frontend development practices using component-
 - 📅 Reminder Scheduling Interface
 - 🌤️ Seasonal Planner View
 - ⛅ Real-time Weather Display
-- 🔄 Weather Refresh Functionality
 - 🔒 Protected Routes (Authentication-based Access)
 - 📱 Fully Responsive UI
 
@@ -33,7 +32,7 @@ This project demonstrates modern frontend development practices using component-
 | Icons | Lucide React |
 | API Handling | Fetch / Axios |
 | State Management | React Hooks |
-| Deployment | Vercel |
+| Deployment | Netlify |
 
 ---
 
@@ -94,7 +93,6 @@ frontend/
 
 - Fetches real-time weather data from backend
 - Displays temperature, conditions, and forecast
-- Includes manual "Refresh Weather" functionality
 - Handles loading and error states
 
 ---
@@ -147,7 +145,7 @@ http://localhost:5173
 Frontend Deployment Link:
 
 ```
-https://your-frontend-deployment-link.vercel.app
+https://your-frontend-deployment-link.netlify.app
 ```
 
 ---
