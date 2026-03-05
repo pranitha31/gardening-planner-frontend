@@ -170,7 +170,7 @@ https://your-frontend-deployment-link.netlify.app
 
 ---
 
-##Check it out Demo
+Check it out Demo
 https://jade-alfajores-67b1cd.netlify.app/
 
 ---
